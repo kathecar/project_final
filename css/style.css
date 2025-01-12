@@ -1,0 +1,409 @@
+/* --------------- RESET Y GLOBAL --------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+/* --------------- VARIABLES GLOBALES --------------- */
+
+ :root {
+    --primary-color: #647E92;
+    --Nav-Color: #AF6894;
+    --secondary-color: #455970;
+    --background-color: #b08ea21e;
+    --card-background: #ffffff;
+    --text-color: #333333;
+    --spacing-base: 1rem;
+    --border-radius: 10px;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --help-button-color: #7FD7E3;
+}
+
+
+/* --------------- FUENTES --------------- */
+
+.poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 50;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 26px;
+}
+
+
+/* --------------- NAVBAR Y NAVIGATION --------------- */
+
+.navBarra {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-size: 16px;
+    background-color: #AF6894;
+    background: linear-gradient(45deg, #af6894, #db758f, #ffaa71, #fc8b81);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    height: 62px;
+    /* Altura específica para la barra de navegación */
+}
+
+.navBarra div {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.logo {
+    height: 80px;
+    /* Altura del logo */
+    width: 60px;
+    /* Ancho del logo */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    margin: 1px;
+    /* Margen alrededor del logo */
+    padding: 5px;
+    /* Espaciado interno */
+    object-fit: contain;
+    /* Asegura que la imagen mantenga su proporción dentro del contenedor */
+}
+
+.aBarra {
+    color: rgb(255, 255, 255);
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.aBarra:hover {
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: #B08EA2;
+}
+
+.IconUser {
+    height: 30px;
+    width: 30px;
+}
+
+.IconUser:hover {
+    background-color: #AF6894;
+    border-radius: 7px;
+}
+
+
+/* --------------- NAV-BAR --------------- */
+
+.nav-bar {
+    background-color: var(--Nav-Color);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: var(--text-color);
+}
+
+.user-icon {
+    height: 40px;
+    cursor: pointer;
+}
+
+
+/* --------------- HEADER --------------- */
+
+.encabezado {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encabezado .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.encabezado .navegacion a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+
+/* --------------- CONTENIDO PRINCIPAL --------------- */
+
+.contenido-principal {
+    padding: 20px;
+}
+
+
+/* --------------- CONTENEDOR PERFIL --------------- */
+
+.contenedor-perfil {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.perfil {
+    text-align: center;
+    flex: 1;
+}
+
+.perfil img {
+    width: 280px;
+    /* Ancho de la imagen */
+    height: 280px;
+    /* Alto de la imagen */
+    border-radius: 50%;
+    /* Para hacerla circular */
+    object-fit: cover;
+    /* Asegura que la imagen cubra el contenedor sin perder proporciones */
+    object-position: center;
+    /* Centra la imagen dentro del contenedor */
+}
+
+h3 {
+    color: #647e92;
+    text-align: center;
+    padding: 10px;
+}
+
+p {
+    text-align: center;
+    padding: 10px;
+}
+
+.nombre {
+    color: #647e92;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.perfil .estrellas {
+    color: gold;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+
+/* --------------- CAJA DE INFORMACIÓN --------------- */
+
+.caja-info {
+    background-color: #f4f4f4;
+    width: 30%;
+    padding: 20px;
+}
+
+.separador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.separador hr {
+    width: 100%;
+    border: 1px solid #333;
+}
+
+.separador .rectangulo {
+    color: #f4f4f4;
+    text-align: center;
+    width: 250px;
+    height: 20px;
+    background-color: #333;
+    margin: 0 10px;
+}
+
+
+/* --------------- TAREAS --------------- */
+
+.tareas {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 20px;
+    gap: 20px;
+}
+
+.tarea {
+    width: 18%;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.5s;
+    border-radius: 8px;
+}
+
+.tarea:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tarea img {
+    width: 100%;
+    /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto;
+    /* Asegura que la imagen ocupe toda la altura del contenedor */
+    object-fit: cover;
+    /* Mantiene las proporciones de la imagen y la cubre completamente */
+    border-radius: 10px;
+    /* Bordes redondeados para la imagen */
+}
+
+.tarea .nombre {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #7fd7e3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #bb6c93;
+}
+
+
+/* --------------- MODAL --------------- */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-contenido {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 3px solid #fc9a79;
+    width: 80%;
+    border-radius: 8px;
+}
+
+.modal-contenido ul {
+    padding: 15px;
+}
+
+.cerrar {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    float: right;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.boton-agendar {
+    align-self: center;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7fd7e3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.boton-agendar:hover {
+    background-color: #bb6c93;
+}
+
+
+/* --------------- FOOTER --------------- */
+
+.footer {
+    text-align: center;
+    background: linear-gradient(45deg, #af6894, #db758f, #ffaa71, #fc8b81);
+    padding: 1rem;
+    margin-top: 3rem;
+    color: white;
+}
+
+
+/* --------------- MEDIA QUERIES (RESPONSIVE) --------------- */
+
+@media (max-width: 768px) {
+    .contenedor-perfil {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .caja-info {
+        width: 100%;
+    }
+    .tareas {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tarea {
+        width: 80%;
+        margin: 10px 0;
+    }
+    .modal-contenido {
+        width: 90%;
+    }
+}
